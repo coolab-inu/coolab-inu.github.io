@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Publications · COOL@INU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="publications">
+<nav id="nav"></nav>
+<header class="page-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Home</a> / Publications</div>
+    <span class="eyebrow">Publications</span>
+    <h1>International journal articles.</h1>
+    <p class="lead" style="margin:0">Published and accepted, 2019 – 2026. Impact factors and JCR ranks as listed by the lab.</p>
+    
+  </div>
+</header>
+<main>
+<section class="band">
+  <div class="wrap">
+    <div class="pubbar">
+      <div class="chips" role="group" aria-label="Filter by year" id="years"></div>
+      <label class="check"><input type="checkbox" id="topOnly"> JCR top 10%</label>
+      <label class="check"><input type="checkbox" id="leadOnly"> Prof. You as first / corresponding author</label>
+      <input class="search" id="q" type="search" placeholder="Search title, author or journal" aria-label="Search publications">
+      <span class="count" id="count"></span>
+    </div>
+    <ol class="pubs" id="pubs"></ol>
+  </div>
+</section>
+</main>
+<footer id="footer"></footer>
+<script src="assets/data.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>

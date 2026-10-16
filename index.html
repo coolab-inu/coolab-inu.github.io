@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>COOL@INU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="home">
+<nav id="nav"></nav>
+
+<header class="hero" id="top">
+  <canvas id="trace" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <img class="logo" src="assets/cool-logo.webp" alt="COOL — Control &amp; Observer Optimization Lab">
+    <h1>From Mathematical Rigor to <span class="g">Real-World Motion.</span></h1>
+    <p class="lead">Control &amp; Observer Optimization Lab at Incheon National University. We design the “brain” of future mobility systems, from rigorous proofs to real-time hardware.</p>
+    <div class="btns">
+      <a class="btn solid" href="#research">Explore research</a>
+      <a class="btn ghost" href="#join">Join the COOL team</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b id="pubCount">25</b><span>International journal articles</span></div>
+      <div class="stat"><b id="topCount">13</b><span>Articles in JCR top 10%</span></div>
+      <div class="stat"><b id="patentCount">7</b><span>Registered patents</span></div>
+      <div class="stat"><b>4</b><span>Core research areas</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="band" id="about" data-nav="about">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Welcome to COOL</span>
+      <h2>Stable, intelligent and optimal systems.</h2>
+    </div>
+    <div class="mission">
+      <div>
+        <p>We are a team of passionate researchers (“COOL Guys”) dedicated to designing the “Brain” of future mobility systems.</p>
+        <p>Our mission is to bridge the gap between <strong>Advanced Control Theory</strong> and <strong>Real-world Applications</strong>. We integrate robust control strategies with embedded AI to create systems that are stable, intelligent, and optimal.</p>
+        <p>At COOL, we don’t just stop at simulations. We emphasize <strong>end-to-end validation</strong>, from rigorous mathematical proofs to real-time implementation on actual hardware platforms.</p>
+      </div>
+      <div>
+        <div class="pipeline" aria-label="End-to-end validation">
+        <div><i>01</i><span>Mathematical proof<small>Lyapunov-based stability and robustness guarantees</small></span></div>
+        <div><i>02</i><span>Controller &amp; observer design<small>Disturbance observers, adaptive and learning-based laws</small></span></div>
+        <div><i>03</i><span>Simulation &amp; HILS<small>MATLAB/Simulink, SCALEXIO, MicroAutoBox, CarSim</small></span></div>
+        <div><i>04</i><span>Real-time hardware<small>Motors, robots, drones, vehicles and edge platforms</small></span></div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="research" data-nav="research">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Core research areas</span>
+      <h2>Control theory that runs on real machines.</h2>
+    </div>
+    <div class="areas">
+      <article class="area"><span class="no">AREA 01</span><h3>Advanced Control Theory</h3><p>Robust Nonlinear Control and Data-driven Control Design for ensuring system stability under uncertainty.</p></article>
+      <article class="area"><span class="no">AREA 02</span><h3>Robot &amp; Mobility</h3><p>Auto-learning-based control for Robotics, UAVs (Drones), and Defense Applications.</p></article>
+      <article class="area"><span class="no">AREA 03</span><h3>Physical AI &amp; Learning</h3><p>Light-weight AI (MLP-Mixer) and ESO-based Signal Augmentation on embedded systems for real-time processing.</p></article>
+      <article class="area"><span class="no">AREA 04</span><h3>Reinforcement Learning</h3><p>Deep Koopman-based Model Predictive Control (MPC) and novel learning frameworks using Disturbance Observers.</p></article>
+    </div>
+
+    <div class="head" style="margin-top: clamp(64px, 8vw, 96px)">
+      <span class="eyebrow">Research topics</span>
+      <h2>What we are working on.</h2>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Research groups">
+      <button class="tab" role="tab" id="tab-act" aria-controls="panel-act" aria-selected="true">Advanced Control Theory</button>
+      <button class="tab" role="tab" id="tab-rm" aria-controls="panel-rm" aria-selected="false">Robot &amp; Mobility</button>
+      <button class="tab" role="tab" id="tab-pai" aria-controls="panel-pai" aria-selected="false">Physical AI &amp; Learning</button>
+    </div>
+    <div class="topics" role="tabpanel" id="panel-act" aria-labelledby="tab-act">
+      <article class="topic"><div class="fig"><img src="assets/img/research-act-1.jpg" alt="Adaptive Neural Network Control" loading="lazy"></div><h3>Adaptive Neural Network Control</h3><p>Intelligent control for highly uncertain and nonlinear dynamic systems. Neural networks identify and compensate unknown dynamics, external disturbances and time-varying changes online, while Lyapunov theory guarantees the stability and safety of the whole closed loop.</p><div class="tags"><span class="tag">Neural approximation</span><span class="tag">Lyapunov</span></div></article>
+      <article class="topic"><div class="fig"><img src="assets/img/research-act-2.jpg" alt="Advanced Control for Electric Motors (PMSM)" loading="lazy"></div><h3>Advanced Control for Electric Motors (PMSM)</h3><p>Field-Oriented Control frameworks for precise torque and speed regulation of permanent magnet synchronous motors, with Disturbance Observers and Event-Triggered Control to reject load variations and cut computation and bandwidth.</p><div class="tags"><span class="tag">FOC</span><span class="tag">DOB</span><span class="tag">Event-triggered</span></div></article>
+      <article class="topic"><div class="fig"><img src="assets/img/research-act-3.jpg" alt="Intelligent Gain Tuning Techniques" loading="lazy"></div><h3>Intelligent Gain Tuning Techniques</h3><p>Adaptive Learning Gain (ALG) algorithms for cascaded control systems. Update laws auto-tune control gains in real time to reach the desired tracking performance across trajectories, robust to unknown loads and parameter variations.</p><div class="tags"><span class="tag">ALG</span><span class="tag">Cascaded control</span></div></article>
+    </div>
+    <div class="topics" role="tabpanel" id="panel-rm" aria-labelledby="tab-rm" hidden>
+      <article class="topic"><div class="fig"><img class="photo" src="assets/img/research-rm-1.jpg" alt="Intelligent Dual-Arm Robotic Manipulation" loading="lazy"></div><h3>Intelligent Dual-Arm Robotic Manipulation</h3><p>Low-level control of multi-DOF dual-arm cooperative manipulators: joint dynamics, precise torque regulation and high-frequency real-time execution, with robust impedance/admittance control for safe human-robot interaction, payload handling and collision avoidance.</p><div class="tags"><span class="tag">Dual-arm</span><span class="tag">Impedance control</span></div></article>
+      <article class="topic"><div class="fig"><img src="assets/img/research-rm-2.jpg" alt="Advanced Braking System Control (ABS) &amp; HILS" loading="lazy"></div><h3>Advanced Braking System Control (ABS) &amp; HILS</h3><p>Robust control of automotive hydraulic brakes, including ABS, validated on real brake hardware through Hardware-in-the-Loop Simulation with real-time targets (SCALEXIO) and MATLAB/Simulink, for slip regulation and stability on varied road friction.</p><div class="tags"><span class="tag">ABS</span><span class="tag">HILS</span><span class="tag">SCALEXIO</span></div></article>
+      <article class="topic"><div class="fig"><img class="photo" src="assets/img/research-rm-3.jpg" alt="Electric Power Steering (EPS) &amp; Vehicle Dynamics" loading="lazy"></div><h3>Electric Power Steering (EPS) &amp; Vehicle Dynamics</h3><p>Lateral dynamics and active steering on a dedicated steering simulator with rapid control prototyping (MicroAutoBox, CarSim): steering assist that improves feel, handling precision and lateral safety for autonomous driving.</p><div class="tags"><span class="tag">EPS</span><span class="tag">CarSim</span></div></article>
+    </div>
+    <div class="topics" role="tabpanel" id="panel-pai" aria-labelledby="tab-pai" hidden>
+      <article class="topic"><div class="fig"><img src="assets/img/research-pai-1.jpg" alt="Data-Driven Control via Deep Koopman MPC" loading="lazy"></div><h3>Data-Driven Control via Deep Koopman MPC</h3><p>Deep neural networks lift nonlinear dynamics into a linear latent space, so efficient linear MPC can run on originally intractable systems, enabling real-time optimal control and trajectory planning of robotic manipulators from purely data-driven models.</p><div class="tags"><span class="tag">Koopman</span><span class="tag">MPC</span></div></article>
+      <article class="topic"><div class="fig"><img src="assets/img/research-pai-2.jpg" alt="Reinforcement Learning-based Robust Control" loading="lazy"></div><h3>Reinforcement Learning-based Robust Control</h3><p>RL agents combined with Extended State Observers learn optimal policies for uncertain nonlinear systems while staying robust to unmodeled dynamics and disturbances, so AI-driven policies are safe and deployable on real hardware.</p><div class="tags"><span class="tag">RL</span><span class="tag">ESO</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="members" data-nav="members">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Members</span>
+      <h2>The COOL Guys.</h2>
+    </div>
+    <div class="director">
+      <div class="id">
+        <div>
+          <img class="portrait" src="assets/img/director-1.jpg" alt="Prof. Sesun You">
+          <span class="eyebrow" style="display:block;margin-top:22px">Director · Principal Investigator</span>
+          <h3 style="margin-top:12px">Prof. Sesun You</h3>
+          <div class="kr">유세선</div>
+        </div>
+        <dl>
+          <dt>E-mail</dt><dd>yousesun@inu.ac.kr</dd>
+          <dt>Office</dt><dd>Room 357, College of Engineering (Bldg. 8), Incheon National University</dd>
+        </dl>
+      </div>
+      <div>
+        <span class="eyebrow">Education &amp; career</span>
+        <ol class="timeline" style="margin-top:14px">
+          <li><time>2026.03 – Present</time><div><b>Assistant Professor, Incheon National University</b><span>Department of Electronic Engineering</span></div></li>
+          <li><time>2024.09 – 2026.01</time><div><b>Assistant Professor, Keimyung University</b><span>Department of Electrical Engineering</span></div></li>
+          <li><time>2020.02 – 2024.02</time><div><b>Ph.D., Chung-Ang University</b><span>School of Energy Systems Engineering</span></div></li>
+          <li><time>2014.03 – 2020.03</time><div><b>B.S., Chung-Ang University</b><span>School of Energy Systems Engineering</span></div></li>
+        </ol>
+        <span class="eyebrow">Research interests</span>
+        <div class="interests" style="margin-top:12px">
+          <span>Nonlinear Control</span><span>Adaptive Control</span><span>Reinforcement-learning-based Control</span><span>Optimization</span><span>Industrial Applications</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="entries">
+      <a class="entry" id="entryResearchers" href="members.html#researchers">
+        <span class="eyebrow">Researchers</span>
+        <h3>Ph.D., M.S. and interns</h3>
+        <span class="big" id="researcherCount">7</span>
+        <div class="monos" id="researcherMonos" aria-hidden="true"></div>
+        <span class="go">Meet the researchers <span class="arrow">→</span></span>
+      </a>
+      <a class="entry" href="members.html#alumni">
+        <span class="eyebrow">Alumni</span>
+        <h3>Where they are now</h3>
+        <span class="big" id="alumniCount">5</span>
+        <p>Undergraduate researchers now in industry and university programs.</p>
+        <span class="go">See alumni <span class="arrow">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="publications" data-nav="publications">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Publications</span>
+      <h2>Latest journal articles.</h2>
+    </div>
+    <div class="covers" id="covers" aria-label="Selected papers"></div>
+    <div class="preview">
+      <ol class="pubs fade-body" id="pubPreview" aria-label="Latest four articles"></ol>
+      <div class="ellipsis" aria-hidden="true">···</div>
+      <div class="more"><a class="btn solid" href="publications.html"><span>View all <span id="pubCount2"></span> articles</span><span class="arrow">→</span></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="patents" data-nav="patents">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Patents</span>
+      <h2>Registered patents.</h2>
+    </div>
+    <div class="preview">
+      <div class="patents fade-body" id="patentPreview"></div>
+      <div class="ellipsis" aria-hidden="true">···</div>
+      <div class="more"><a class="btn solid" href="patents.html"><span>View all <span id="patentCount2"></span> patents</span><span class="arrow">→</span></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="join" id="join">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Join the COOL team</span>
+      <h2>Be COOL.</h2>
+      <p>We are actively recruiting highly motivated M.S./Ph.D. students and Undergraduate Interns. We value strong fundamentals in dynamics, mathematics, and programming skills (MATLAB/Python). Above all, we look for intellectual curiosity and grit to solve unsolved problems.</p>
+      <p>When you contact Prof. You, please share a short story of your persistence. It doesn’t have to be academic: reaching Diamond Tier in LoL, completing a 50 km march or a full marathon, a successful diet diary. Anything that shows your tenacity is welcome.</p>
+      <p>If you are passionate about Control, AI, and Future Mobility, join us and be COOL.</p>
+    </div>
+    <div class="card">
+      <h3>What you will gain</h3>
+      <div class="gain">
+        <div><b>Full-Stack Mastery</b><span>From control theory to real-time embedded AI implementation (C/C++/Python, ROS2).</span></div>
+        <div><b>Tangible Experience</b><span>Build and test actual drones, robots, and edge computing platforms.</span></div>
+        <div><b>Industry Leadership</b><span>Grow into an expert who leads the automotive, robotics, and defense industries.</span></div>
+      </div>
+      <span class="eyebrow">Contact Prof. Sesun You</span>
+      <div class="copy"><code id="mail">yousesun@inu.ac.kr</code><button type="button" id="copyBtn">Copy</button></div>
+      <p style="font-size:14px;color:var(--muted);margin:12px 0 0">Room 357, Building 8, Incheon National University</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="footer"></footer>
+<script src="assets/data.js"></script>
+<script src="assets/site.js"></script>
+<script>
+  document.getElementById("pubCount2").textContent = PUBS.length;
+  document.getElementById("patentCount2").textContent = PATENTS.length;
+</script>
+</body>
+</html>
