@@ -158,6 +158,7 @@ const PATENTS = [
 
 /* newest first: [year, date, text, photos, optional vertical focus % for the cover crop] */
 const NEWS = [
+  [2026,"2026.10.27 – 30","Members of our lab participated in ICCAS 2026, the 26th International Conference on Control, Automation and Systems, at Hotel Emisia Sapporo in Sapporo, Japan, and presented their research posters.",["news-2026-10-27-1.jpg","news-2026-10-27-2.jpg","news-2026-10-27-3.jpg","news-2026-10-27-4.jpg","news-2026-10-27-5.jpg"]],
   [2026,"2026.10.12","Lab tour: Prof. Hashimoto from the Department of Mechanical Engineering, Osaka Institute of Technology (OIT), Japan, visited our lab for a research meeting, a lab tour and lunch together.",["news-2026-10-12-1.jpg","news-2026-10-12-2.jpg","news-2026-10-12-3.jpg"]],
   [2026,"2026.08.24","Members of our lab held a dinner gathering at Seogam Saeng Sogeum-gui (158 Harmony-ro, Yeonsu-gu, Incheon) to celebrate the relocation of our lab.",["news-2026-08-24-1.jpg","news-2026-08-24-2.jpg"]],
   [2026,"2026.07.14","Joint dinner with the Power & Energy Systems LAB at Seodang-ro 61 in Daegu to celebrate the end of the first semester and hold a farewell party.",["news-2026-07-14-1.jpg","news-2026-07-14-2.jpg"]],
