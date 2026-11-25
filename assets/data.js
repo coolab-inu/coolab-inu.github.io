@@ -178,3 +178,17 @@ const COVERS = [
   [12,"cover-4.jpg"],
   [13,"cover-5.jpg"]
 ];
+
+/* undergraduate project pages on the home page. model: "cube", "isp" or "car" (white 3D model on the card, moves on hover);
+   img is shown until the model loads, and stays if it cannot. lang: languages of the linked page. */
+const PROJECTS = [
+  { title: "Self-Balancing Cube with a Disturbance Observer",
+    text: "Reaction-wheel attitude control of a cube balancing on one corner, with a disturbance observer. Hardware tap tests and simulation, observer off against on.",
+    url: "https://coolab-inu.github.io/cube_dob/", img: "project-cube-dob.jpg", model: "cube", lang: "EN · KO", tags: ["DOB", "Reaction wheel"] },
+  { title: "Disturbance Observer-based Elevation Control System for a Launch Platform in a Wave Simulation Environment",
+    text: "Hardware validation on a wave simulation platform: tracked rig videos, logged signals and a 3D replay, observer off against on.",
+    url: "https://coolab-inu.github.io/isp-dob/", img: "project-isp-dob.jpg", model: "isp", lang: "EN · KO", tags: ["DOB", "Elevation control"] },
+  { title: "Hierarchical Torque Vectoring Control of a 4WID Electric Vehicle Based on Dynamic Vertical Load",
+    text: "Yaw-moment control with four-wheel torque allocation, verified in Simulink and in real time on an Arduino Due (processor-in-the-loop). Yaw-rate RMSE down 71.7% in the PIL test.",
+    url: "https://coolab-inu.github.io/torque-vectoring-pil/", img: "project-torque-vectoring.jpg", model: "car", lang: "KO", tags: ["Torque vectoring", "PIL", "Arduino Due"] }
+];

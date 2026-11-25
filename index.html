@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
-<link rel="stylesheet" href="assets/site.css?v=202611202119">
+<link rel="stylesheet" href="assets/site.css?v=202611252113">
 </head>
 <body data-page="home">
 <nav id="nav"></nav>
@@ -95,7 +95,17 @@
   </div>
 </section>
 
-<section class="band" id="members" data-nav="members">
+<section class="band" id="projects" data-nav="projects">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Undergraduate research projects</span>
+      <h2>From simulation to real hardware.</h2>
+    </div>
+    <div class="projects" id="projectList"></div>
+  </div>
+</section>
+
+<section class="band alt" id="members" data-nav="members">
   <div class="wrap">
     <div class="head">
       <span class="eyebrow">Members</span>
@@ -149,7 +159,7 @@
   </div>
 </section>
 
-<section class="band alt" id="publications" data-nav="publications">
+<section class="band" id="publications" data-nav="publications">
   <div class="wrap">
     <div class="head">
       <span class="eyebrow">Publications</span>
@@ -164,7 +174,7 @@
   </div>
 </section>
 
-<section class="band" id="patents" data-nav="patents">
+<section class="band alt" id="patents" data-nav="patents">
   <div class="wrap">
     <div class="head">
       <span class="eyebrow">Patents</span>
@@ -203,8 +213,8 @@
 </main>
 
 <footer id="footer"></footer>
-<script src="assets/data.js?v=202611202119"></script>
-<script src="assets/site.js?v=202611202119"></script>
+<script src="assets/data.js?v=202611252113"></script>
+<script src="assets/site.js?v=202611252113"></script>
 <script>
   document.getElementById("pubCount2").textContent = PUBS.length;
   document.getElementById("patentCount2").textContent = PATENTS.length;
